@@ -1,0 +1,916 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+      /* ------------------body------------------- */
+    body{
+      background-color: #eaf4f4;
+      height: 3180px;
+      perspective: 700px;
+       }
+  /* --------------header----------------------- */
+
+   .header{
+    width: 100%;
+    height: 180px;
+    background-color: #eaf4f4;
+   z-index: 30;
+  }
+    .logoanima{
+position: absolute;
+animation-name: hello ;
+animation-duration: 7s ;
+animation-iteration-count: infinite;
+    }
+@keyframes hello {
+0%{
+left: 0;
+}
+25%{
+  left: 0;
+}
+50%{
+left: 950px;
+}
+75%{
+  left: 0;
+}
+100%{
+  left: 0;
+}
+}
+ .img1{
+   width: 180px;
+   height: 100px;
+   margin-left: 100px;
+   float: left;
+   margin-top: 5px;
+   margin-right: 0px;
+  z-index: 20;
+box-shadow: 1px 5px 5px 5px rgb(169, 194, 240) ;
+border-radius: 250px;
+  }
+ /* ----------------------------------العناصر */  
+.nav-links > li{
+ display: inline-block;
+list-style: none;
+ margin: 120px 20px -20px 20px;
+ font-family:Arial, Helvetica, sans-serif;
+ }
+.list i {
+ font-size: 30px;
+ margin-left: 25px;
+ color: #503c2c;
+ }
+.content{
+ font-size: medium;
+ margin-top: -30px;
+}
+.drop-like{
+ text-decoration: none;
+ }
+ /* -------------list--------------------- */
+.asd{
+ margin-left: 250px;
+ }
+.nav-links .border-animation{
+text-decoration: none;
+font-size: 18px;
+font-weight: 700;
+padding: 15px 10px;
+position: relative;
+color: #503c2c;
+}
+.nav-links .border-animation::before {
+ content: "";
+ position: absolute;
+ width: 0;
+height: 0;
+ border: 2px solid transparent;
+ bottom: 0;
+ left: 0;
+ box-sizing: border-box;
+ transition: height 0.1s linear;
+ }
+ .nav-links .border-animation:hover::before{
+ height: 100%;
+ width: 100%;
+ border: 2px solid #41362d;
+ border-top: none; 
+ border-bottom:none;
+ transition: height 0.1s linear;
+ }
+ /* ------------------------------------ */
+.nav-links .border-animation::after{
+ content:"";
+ position: absolute;
+ width: 0;
+ height: 0;
+ border: 2px solid transparent;
+ top: 0;
+ left: 0;
+ box-sizing: border-box;
+ transition: width 0.2s  0.3s linear;
+  }
+ .nav-links .border-animation:hover::after{
+  width: 100%;
+  height: 100%;
+  border: 2px solid #41362d;
+  border-left: none; 
+  border-right:none ;
+  transition: width  0.3s  0.2s linear;
+ } 
+/* ------------------dropdown----------------------------- */
+.mega-box-parent {
+  position: relative;
+   }  
+   .mega-links a{
+    color: #503c2c;
+   }
+  .mega-box {
+ margin-left: 250px;
+ position: absolute;
+ z-index: 100;
+ width: 380px;
+ height: 0px;
+ padding: 15px 0px 0px 11px;
+
+ transform: scale(0);
+ transition: all 0.05s ease;
+ }
+.nav-links .mega-box-parent:hover .mega-box {
+ top: 55px;
+ transform: scale(1);
+ color: #e47d16;
+  }  
+  /* ----------------------------------- */
+ .mega-box .content{
+ display: flex;
+ padding: 10px 10px;
+ width: 100%;
+ font-size: small;
+ line-height: 30px;
+} 
+  /* ----------------------------------- */
+.content{
+ border: 2px solid #41362d;
+  margin-left: -10px;
+    }
+.mega-box  .row{
+text-align: left; 
+ }
+.mega-links{
+list-style: none;
+padding:0px 20px;
+ }
+ /* *************************cart-plus**************/
+  .headernoon{
+  width: 50px;
+  height: 50px;
+  margin-left: 1120px;
+  margin-top:-25px;
+  position: relative;
+  }
+  .noon{
+  color: #1f51f5;
+  font-size: x-large;
+  }  
+   /* ***************headernoonp******************    */
+  .headernoonp{
+  width: 13px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #503c2c;
+  position: absolute;
+  left: 25px;
+  top: 14px;
+  }
+  /* **************0******************* */
+  .headernoonp1{
+  color: #f9faff;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 2px;
+   }
+   /* ************yourpage********************* */
+   .headernoonp2{
+    color: #552626;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 34px;
+    margin-top: -15px;
+     }
+   /* ********************************* */
+   /* ---------------main----------------------------------------------------------------------------------------------- */
+.main{
+width: 80%;
+height: 500px;
+background-image: url(../images/brand/nicolas-cool-eZWclXLnAPA-unsplash.jpg);
+position: relative;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+margin: auto;
+border-radius: 250px;
+margin-top: 20px;
+   }
+
+.sec1main{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 50PX;
+color: #1f51f5;
+text-align: right   ;
+padding: 250PX  50PX 0PX 0PX;
+letter-spacing: 5px;
+
+}
+.sec1main1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 50PX;
+  color: #1f51f5;
+  text-align: right   ;
+  padding: 0PX  50PX 25PX 0PX;
+    }
+.button1{
+  width: 120px;
+  height: 40px;
+border-radius: 6px;
+border: 0;
+font-size: 17px;
+margin-top: -80px;
+margin-left: 800px;
+color: #1f51f5;
+border: 1px solid #1f51f5;
+}  
+ /* --------------------sec1----------------------------------------------------------------------------------------------- */
+.sec1{
+    width: 80%;
+    height: 620px;
+    background-color: #eaf4f4;
+    margin: auto;
+    }
+   .sec1title{
+    width: 100%;
+    height: 130px;
+    background-color: #eaf4f4;
+   }
+   /* ----------------------العنوان------------------ */
+.sec1title1{
+  text-align: center;
+  font-size: 35PX;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-top: 35PX;
+  color: #1d1815;
+  }
+     /* ----------------------الخط الافقى------------------ */
+ .line1{
+  width: 80px;
+  height: 2px;
+  background-color: #3d312a;
+  margin:  15px auto;
+  transition: 1s;
+  }
+ .line1:hover {
+   transform: scale(2,1);
+  }
+  /* ------------------ الصور---------------------- */
+  /* -----------------------parent------------------ */
+.sec1photos{
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-flow: row;
+  justify-content:space-evenly;
+}
+     /* ------------------جزء الصور---------------------- */
+     .sec1photo1{
+height: 350px;
+background-image: url(../images/brand/seiko\ 1.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+flex-grow: 1;
+box-shadow: 1px 1px 10px 0px #eaf4f4 inset ;
+border-radius: 15px;
+}
+.sec1photo2{
+  height: 350px;
+  background-image: url(../images/brand/rolex\ 2-unsplash.jpg);
+  background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+flex-grow: 1;
+box-shadow: 1px 1px 10px 0px #eaf4f4 inset ;
+border-radius: 15px;
+}
+.sec1photo3{
+  height: 350px;
+  background-image: url(../images/brand/brt.jpg);
+  background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+flex-grow: 1;
+box-shadow: 1px 1px 10px 0px #eaf4f4 inset ;
+border-radius: 15px;
+}
+.sec1photo4{
+  height: 350px;
+  background-image: url(../images/brand/dig\ 1.jpg);
+  background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+flex-grow: 1;
+box-shadow: 1px 1px 10px 0px #eaf4f4 inset ;
+border-radius: 15px;
+}
+.mm{
+  margin: 0px 1%;
+}
+.m{
+  margin: 0px 0px 0px 1%;
+}
+ /* -------------نهاية الصور --------------------- */
+
+ /* ------------محتوى المقطع الاول---------------------- */
+
+ /* ------------------sec1content---------------------- */
+
+/* ------------------parent-<sec1content>----------------- */
+.sec1content{
+  width: 100%;
+  height: 100px;
+  background-color: #eaf4f4;
+  display: flex;
+ flex-flow: row;
+justify-content: space-evenly;
+text-align: center;
+}
+/* ------------------DIVS-------------------------------- */
+.sec1content1{
+  height: 100px;
+  width: 315px;
+}
+.sec1content2{
+  height: 100px;
+  width: 315px;
+}
+.sec1content3{
+  height: 100px;
+  width: 315px;
+}
+.sec1content4{
+  height: 100px;
+  width: 315px;
+}
+/* ------------------/DIVS-------------------------------- */
+/* ------------------H2-------------------------------- */
+
+.sec1content11title{
+  margin-top: 20px;
+  font-size: 20px;
+  color: #b87054;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* ------------------span-------------------------------- */
+.j{
+  color: #22140a;
+  font-size: 19px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: left;
+
+}
+/* ------------------dart-------------------------------- */
+.sec1 i {
+  font-size: 35px;
+  color: #774632;
+  margin-left: 5px;
+  opacity: 0;
+}
+.sec1 i:hover{
+  opacity: 1;
+}
+ /* -----------------/-sec1-------------------------- */
+ /* ----------sec2------------------------------------ */
+   /* ----------parent------------------------------------ */
+ .sec2{
+   width: 82%;
+   height: 450px;
+   margin: auto;
+   overflow: auto;
+   } 
+  /* ----------div1--sec2shaps--------------------------------- */
+   .sec2shap1{
+    width: 50%;
+    height: 380px;
+    background-color: #e1ecec;
+    float: left;
+    margin-left: 10px;
+    overflow: auto;
+
+   }
+   /* ******************* */
+   .sec2shap2{
+    width: 22%;
+    height: 380px;
+     background-image: url(../images/brand/ttttt.jpg);  
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     float: left;
+     transition: 1s;
+  }
+  .sec2shap2:hover{
+    transform: scale(1.1 , 1.1);
+  }
+  /* ******************* */
+   .sec2shap3{
+    width: 22%;
+    height: 380px;
+    background-image: url(../images/sovoner/rrrrr.jpg);  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    float: left;
+    transition: 1s;
+   }
+   .sec2shap3:hover{
+    transform: scale(1.1 , 1.1);
+  }
+.sec2shap2{
+  margin: 0px 2%;
+}
+/* ----------------------paragaraph---------- */
+.sec2shap1p{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 15px;
+margin-top: 25px;
+margin-left: 20px;
+line-height: 35px;
+}
+/* ----------------------الخطوط الافقية الثلاثه---------- */
+.sec2lines{
+  width: 100%;
+  height: 80px;
+  margin: 15px 0px 0px 0px ;
+  overflow: auto;
+
+}
+/* ----------------------الخطوط  الثلاثه---------- */
+.sec2line1{
+  width: 45px;
+  height: 2px;
+  background-color: rgb(66, 60, 56);
+  float: left; 
+  margin: 30px 10px 10px 350px;
+}
+.sec2line2{
+  width: 45px;
+  height: 2px;
+  background-color: rgb(66, 60, 56);
+  float: left; 
+  margin: 30px 10px 10px 10px;
+}
+.sec2line3{
+  width: 45px;
+  height: 2px;
+  background-color: rgb(66, 60, 56);
+  float: left; 
+  margin: 30px 10px 10px 10px;
+  }
+      
+/* ----------------------علامة ؛؛---------- */
+.signe{
+  float: left;
+  height: 50px;
+}
+.signeside{
+  float: left;
+  height: 50px;
+}
+.ee{
+  font-size: 50px;
+padding: 20px 3px 0px 20px;
+color: #b87054;
+display: inline-block;
+}
+/* ------------------Slase Planning------------- */
+.sec2titlespan{
+  font-size: 25px;
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 30px 3px 0px 25px;
+}
+/* ------------------markiting------------- */
+.sec2title{
+  margin-left: 75px;
+  font-size: 15px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+/* ------------------30% Discount---------------- */
+.sec2shap2p{
+font-family:Arial, Helvetica, sans-serif;
+font-size: large;
+padding: 20px 0px 0px 20px;
+
+}
+.sec2shap2p{
+  color: #b87054;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: large;
+  padding: 20px 0px 0px 20px;
+  
+  }
+  /* ------------------Designing Gift-------- */
+  .sec2shaph2{
+    color: #b87054;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    padding: 0px 0px 0px 20px;
+     }
+    /* ----------sec3--------------------------- */
+ .sec3{
+  width: 80%;
+  margin: auto;
+  margin-top:-40px;
+
+   }    
+.allitems{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+/* ------------------------------الصور الصغيرة */
+.item {
+  height: 55px;
+  width: 150px;
+  background-image: url(../images/service-icon.png);
+  background-repeat: no-repeat;
+  transition: all 0.3s ease;
+  border: px solid #695c5c;
+  padding-left: 70px;
+}
+/* الصورة الاولى----- */
+   .item1 { 
+    width: 20%;
+   background-position: center 5px;
+   padding-left: 220px;
+  }
+   .item1:hover {
+    background-position: center -89px;
+}
+/* الصورة الثانية----- */
+
+   .item2 {
+    width: 20%;
+    padding-left: 220px;
+   background-position: center -180px; 
+   }  
+   .item2:hover {
+    background-position: center -273px;
+}
+/* الصورة الثالثة----- */
+ .item3{
+    width: 20%;
+    padding-left: 220px;
+   background-position: center -364px;
+
+   }
+   .item3:hover {
+    background-position: center -457px;
+}
+/* الصورة الرابعة----- */
+   .item4{
+    width: 20%;
+    padding-left: 220px;
+   background-position: center -549px;
+   }
+   .item4:hover {
+    background-position: center -640px;
+}
+/* الصورة الخامسة----- */
+   .item5{
+    width: 20%;
+    padding-left: 220px;
+   background-position: center -731px;
+   }
+   .item5:hover {
+    background-position: center -821px;
+}
+/* ------------------------------ نهاية الصور الصغيرة */
+/*------------------ محتوى السكشن 3------------------------------ */
+/*------------------ PARENT-------------------------- */
+.sec3content{
+  width: 80%;
+  height: 80px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+/* ---------------------------- */
+.con{
+  border-left: 1px solid rgb(41, 39, 39);
+  margin-bottom: 20px;
+}
+.con1{
+  width: 215px;
+  background-color: #eaf4f4;
+  border-left: none;
+}
+.sec3h2con1{
+  text-align: center;  
+  font-size: large;
+font-family: Arial, Helvetica, sans-serif;
+}
+.sec3h2con2{
+text-align: center;  
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #888787;
+  }
+.con2{
+  width: 215px;
+}
+.con3{
+  width: 215px;
+}
+.con4{
+  width: 215px;
+}
+.con5{
+  width: 215px;
+}
+/* --------------الخط الافقى الكبير */
+.sec3line5{
+  width: 1090px;
+  height: 1px;
+  background-color: rgb(46, 44, 42);
+  margin:  70px auto;
+}
+/* -----------------sec5-------------------- */
+/* ---------------parent---------------------- */
+
+   .sec5{
+width: 100%;
+background-color: #eaf4f4;
+margin-top: -50px;
+
+   }
+  /* -----------------sec5title-------------------- */
+
+   .sec5title{
+    width: 80%;
+    height: 150px;
+    background-color: #eaf4f4;
+    margin: 5px auto;
+font-size: 20px;
+text-align: center;
+font-family:Arial, Helvetica, sans-serif;
+padding-top: 60px;  
+color: #020101;
+}
+.sec5span{
+  padding-top: 15px;
+  color: #503c2c;
+}
+.sec5span{
+  font-family:Arial, Helvetica, sans-serif;
+margin-left: 30px;
+font-size: 17px;
+}
+.sec5span2{
+  margin-left: 30px;
+}
+
+     /* -----------------sec5contaiers-------------------- */
+   .sec5contaier1 {
+    width: 80%;
+    height: 400px;
+    margin: 60px 160px 20px 140px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:15px ;
+       } 
+ /* ************foto1***********      */
+.foto1 , .front1 , .back1{
+  width: 350px;
+  height: 100%;
+}
+.back1{
+  background-size: cover;
+  background-image: url(../images/brand/ben-koorengevel-k7ROICNo964-unsplash.jpg);
+  transform: rotateY(180deg);
+  border-radius: 15px;
+}
+.foto1{
+  margin: auto;
+  position: relative;
+  transition: all 0.3s;
+  transform-style: preserve-3d;
+}
+.front1 ,.back1{
+position: absolute;
+}
+.front1{
+z-index: 1;
+background-image: url(../images/brand/gorg.jpg);
+backface-visibility: hidden;
+background-size: cover;
+border-radius: 15px;
+}
+.foto1:hover{
+transform: rotateY(180deg);
+}
+ /* ***********foto2************      */
+ .foto2 , .front2 , .back2{
+  width: 350px;
+  height: 100%;
+}
+.back2{
+  background-size: cover;
+  background-image: url(../images/brand/back.jpeg);
+
+  transform: rotateY(180deg);
+  border-radius: 15px;
+}
+.foto2{
+  margin: auto;
+  position: relative;
+  transition: all 0.3s;
+  transform-style: preserve-3d;
+}
+.front2 ,.back2{
+position: absolute;
+}
+.front2{
+z-index: 1;
+background-image: url(../images/brand/uuuum.png);
+border-radius: 15px;
+
+backface-visibility: hidden;
+background-size: cover;
+}
+.foto2:hover{
+transform: rotateY(180deg);
+}
+/* ***********foto3************      */
+.foto3 , .front3 , .back3{
+  width: 350px;
+  height: 100%;
+}
+.back3{
+  background-size: cover;
+  background-image: url(../images/digital/daniel-korpai-wW7XbWYoqK8-unsplash.jpg);
+  transform: rotateY(180deg);
+  border-radius: 15px;
+}
+.foto3{
+  margin: auto;
+  position: relative;
+  transition: all 0.3s;
+  transform-style: preserve-3d;
+}
+.front3 ,.back3{
+position: absolute;
+}
+.front3{
+z-index: 1;
+background-image: url(../images/brand/Apple-Watch-11.png);
+border-radius: 15px;
+
+backface-visibility: hidden;
+background-size: cover;
+}
+.foto3:hover{
+transform: rotateY(180deg);
+}
+      /* ------------------------------------- */
+  .sec5contaier2{
+   width: 80%;
+   height: 90px;
+   margin:  auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap:15px ;
+    }
+.con1, .con2 ,.con3{
+  padding: 5px 0px;
+  }
+.con1p{
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 3px;
+ }
+ /* ------------------------------------- */
+ .sec5contaier3{
+  width: 80%;
+  height: 400px;
+  margin: 5px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap:15px ;
+  } 
+/* ************foto4***********      */
+  .foto4 , .front4 , .back4{
+  width: 350px;
+  height: 100%;
+}
+.back4{
+  background-size: cover;
+  background-image: url(../images/brand/سامس_QL80_.jpg);
+
+  transform: rotateY(180deg);
+  border-radius: 15px;
+}
+.foto4{
+  margin: auto;
+  position: relative;
+  transition: all 0.3s;
+  transform-style: preserve-3d;
+}
+.front4 ,.back4{
+position: absolute;
+}
+.front4{
+z-index: 1;
+background-image: url(../images/alarm/صصصصصصصصصصص\ at\ 5.43.26\ PM.jpeg);
+
+border-radius: 15px;
+
+backface-visibility: hidden;
+background-size: cover;
+}
+.foto4:hover{
+transform: rotateY(180deg);
+}
+ /* ***********foto5************      */
+ .foto5 , .front5 , .back5{
+  width: 350px;
+  height: 100%;
+}
+.back5{
+  background-size: cover;
+  background-image: url(../images/brand/studio-crevettes-peqgmGBtsfI-unsplash.jpg);
+  transform: rotateY(180deg);
+  border-radius: 15px;
+
+}
+.foto5{
+  margin: auto;
+  position: relative;
+  transition: all 0.3s;
+  transform-style: preserve-3d;
+}
+.front5 ,.back5{
+position: absolute;
+}
+.front5{
+z-index: 1;
+background-image: url(../images/brand/wwwwww.jpeg);
+border-radius: 15px;
+
+backface-visibility: hidden;
+background-size: cover;
+}
+.foto5:hover{
+transform: rotateY(180deg);
+}
+/* ***********foto6************      */
+.foto6 , .front6 , .back6{
+  width: 350px;
+  height: 100%;
+}
+.back6{
+  background-size: cover;
+  background-image: url(../images/brand/alaaarm.jpeg);
+  border-radius: 15px;
+
+  transform: rotateY(180deg);
+}
+.foto6{
+  margin: auto;
+  position: relative;
+  transition: all 0.3s;
+  transform-style: preserve-3d;
+}
+.front6 ,.back6{
+position: absolute;
+}
+.front6{
+z-index: 1;
+background-image: url(../images/alarm/oo.jpeg);
+border-radius: 15px;
+
+backface-visibility: hidden;
+background-size: cover;
+}
+.foto6:hover{
+transform: rotateY(180deg);
+}
+.ii{
+font-size: xxx-large;
+text-align: center;
+padding-top: 300px;
+}
+/* -----------------sec5contaiers-------------------- */
